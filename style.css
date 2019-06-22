@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #44464f;
+}
+
+a{
+   color: #86c043; 
+}
+
+.wrapper{
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+#header{
+    padding: 15px 0 10px;
+}
+
+#header .wrapper:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-logo, .header-address, .header-contact, .header-getprice{
+    float: left;
+}
+
+.header-logo{
+    margin-right: 93px;
+}
+
+.header-address{
+    margin-top: 25px;
+    padding-left: 30px;
+    background: url('img/address-i.png') no-repeat left top;
+    font-style: normal;
+    margin-right: 110px;
+    font-size: 18px;
+}
+
+.header-contact{
+    margin-top: 20px;
+    margin-right: 110px;
+}
+
+.header-contact-phone, .header-contact-email{
+    display: block;
+    text-decoration: none;
+}
+
+.header-contact-phone{
+    color: #44464f;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 30px;
+    position: relative;
+}
+.header-contact-phone:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    display: block;
+    width: 20px;
+    height: 19px;
+    background: url('img/phone-i.png') no-repeat center center;
+}
+
+
+.header-contact-email{
+    font-size: 16px;
+    padding-left: 30px;
+    background: url('img/email-i.png') no-repeat left center;
+    line-height: 16px;
+}
+
+.header-getprice{
+    float: right;
+    margin-top: 20px;
+}
+
+.header-getprice-button{
+    background: #86c043 url('img/price-i.png') no-repeat 35px center;
+    color: #fff;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    width: 220px;
+    border-radius: 3px;
+    display: block;
+    text-decoration: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.header-bottom .wrapper{
+    border-top: 1px solid #cbcccd;
+}
+
+.header-bottom-menu:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-bottom-menu li a{
+    display: block;
+    float: left;
+    height: 68px;
+    line-height: 68px;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #44464f;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.header-bottom-menu li.home a{
+    background: url('img/home-i.png') no-repeat 18px center;
+    padding-left: 50px;
+}
+
+.header-bottom-menu li.current a{
+    background-color: #ffd307;
+    position: relative;
+    top: -1px;
+    border-bottom: 1px solid #ffd307;
+}
+
+.header-bottom-menu li a:hover{
+    color: #fff;
+    background-color: #86878e;
+}
+
+
+/* Slider */
+
+.home-slider .slide{
+    height: 500px;
+    background: url('img/slide.jpg') no-repeat center center;
+    padding: 130px 0 0 260px;
+    box-sizing: border-box;
+}
+
+.home-slider .slide .slide-title{
+    color: #86c043;
+    font-size: 56px;
+    text-shadow: 1px 1px 0px rgba(68, 70, 79, 1);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 0 10px 0;
+}
+
+
+.home-slider .slide .slide-descr{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Home-news */
+
+.home-news-title{
+    color: #86c043;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 55px 0;
+    text-shadow: 1px 1px 0px rgba(161, 162, 167, 1);
+}
+.home-news-container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.home-news-container-item{
+    height: 448px;
+    width: 403px;
+    float: left;
+    background-color: #f5f6f8;
+    box-shadow: 1px 1px 3px 0px rgba(229, 229, 229, 0.5);
+    border-radius: 2.5px;
+}
+.home-news-container-item-title{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 25px 30px 17px 25px;
+    display: block;
+}
+.home-container-item-image{
+    height: 189px;
+}
+.home-news-container-item-text{
+    margin:0 30px 62px 25px;
+    font-size: 16px;
+    font-family: 'Myriad Pro', sans-serif;
+}
+.home-news-container-item:nth-child(1),.home-news-container-item:nth-child(2){
+    margin-right: 25px;
+}
+
+
+/* FOOTER*/
+
+#footer{
+    background-color: #689434;
+    margin-top: 59px;
+    z-index: -1;
+}
+#footer .wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer-col{
+    float: left;
+    color: #fff;
+    margin-top: 31px;
+    
+}
+.footer-aboutus{
+    width: 306px;
+    margin: 43px 0;
+}
+.footer-col-title{
+    text-transform: uppercase;
+    color: #ffd307;
+    font-size: 20px;
+    padding: 56px;
+}
+#footer h4, p{
+    margin: 0;     
+}
+ 
+/*----footer menu block----*/ 
+.footer-menu li{
+    margin-top: 36px;
+    padding-left: 13px;
+ }
+
+.footer-menu li a{
+     display: block;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #fff;
+}
+
+
+/*---footer blog block---*/
+.footer-col :nth-child(3){
+    width: 212px;
+}
+.footer-blog li{
+    padding: 31px 0 22px 0;
+}
+.footer-blog li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer-blog .footer-blog-image{
+    float: left;
+    display: block;     
+}
+
+.footer-blog-title{
+    
+    height: 59px;
+    width: 108px;
+    margin: auto;
+    color: #fff;
+}
+
+time{
+    display: block;
+    padding: 6px 0 0 103px;
+    color:#111;
+    font-weight: 800;
+}
+
+
+
+
+/* footer-contact-block*/
+
+
+.footer-adress{
+   font-style: normal;
+   background: url('image/map-marker-i.png') no-repeat top left;
+   padding-left: 34px;
+   margin-top: 31px;
+}
+
+.footer-col a{
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-phone{     
+    font-size: 24px;
+    background: url(img/phone-i.png) no-repeat top left;
+    padding-left: 34px;
+    margin-top: 32px;
+    color: #ffffff;
+    
+}
+
+.footer-email{
+    font-size: 16px;
+    background: url(img/envelope-i.png) no-repeat top left;
+    padding-left: 34px;
+    margin-top: 32px;
+    color: #ffd307;
+}
+
+.footer-worktime{
+    color: #ffffff;
+    background: url(img/clock-i.png) no-repeat top left;
+    padding-left: 34px;
+    margin-top: 32px;
+}
